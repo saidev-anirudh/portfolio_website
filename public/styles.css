@@ -1,0 +1,161 @@
+/* Updated Title Overlay Styles for Mr. Robot-inspired entry reverted back to blue */
+#titleOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #000, #444, #777);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  font-family: 'Montserrat', sans-serif;
+  perspective: 1000px;
+  transform: translateZ(0);
+  text-align: center;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.title-container {
+  animation: float 3s infinite ease-in-out;
+  transform-style: preserve-3d;
+}
+
+@keyframes float {
+  0% { transform: translateZ(0); }
+  50% { transform: translateZ(20px); }
+  100% { transform: translateZ(0); }
+}
+
+/* Updated Title Overlay Heading with striped effect reverted to blue */
+#titleOverlay h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  margin: 0;
+  background: repeating-linear-gradient(90deg, #00BFFF, #00BFFF 1px, transparent 1px, transparent 3px);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(0,191,255,0.5), 0 0 5px rgba(0,191,255,0.5);
+}
+
+#titleOverlay button {
+  margin-top: 40px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background: transparent;
+  color: #F00;
+  border: 2px solid #F00;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#titleOverlay button:hover {
+  background: #F00;
+  color: #000;
+  transform: scale(1.1);
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #111;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: #fff;
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  color: #F00;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.hero h2 {
+  color: #F00;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.about, .contact {
+  padding: 50px 20px;
+  background-color: rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+.about h2, .contact h2 {
+  color: #F00;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about p, .contact p {
+  font-size: 1rem;
+}
+
+.projects {
+  padding: 50px 20px;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background: #333;
+  padding: 20px;
+  border: none;
+  flex: 1 1 calc(33% - 40px);
+  box-sizing: border-box;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  border-top: none;
+} 
