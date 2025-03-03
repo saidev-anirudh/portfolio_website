@@ -2,6 +2,7 @@ import { Container } from "@mui/material";
 import AnimatedWelcome from "./AnimatedWelcome";
 import NavigationBar from "./NavigationBar";
 import "./App.css";
+import { Analytics } from "@vercel/analytics/react"
 import React, { useEffect } from 'react';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
     >
       <NavigationBar />
       <AnimatedWelcome />
+      <Analytics />
     </Container>
   );
 }
