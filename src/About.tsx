@@ -36,7 +36,6 @@ const calculateAge = (birthDateString: string) => {
 const About = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-  //* If you have copied this code from my repository, please replace the date below with your own birthdate.
   const age = calculateAge("2002-07-03");
   const boxStyle: SxProps<Theme> = { mt: 10, px: 2, marginLeft: isMobile ? "0" : "-1rem" };
   const aboutSectionStyle = { mb: 4, p: 3, borderRadius: "8px", background: "linear-gradient(135deg, #2a003d 0%, #000 100%)" };
@@ -152,7 +151,7 @@ const Timeline = () => {
         iconStyle={{ background: '#5000ca', color: '#fff' }}
         icon={<FontAwesomeIcon icon={faBriefcase} />}
       >
-        <h3 style={{ fontFamily: 'Montserrat' }}>Project Intern at Signal Corp. Ltd., Remote</h3>
+        <h3 style={{ fontFamily: 'Montserrat' }}>Project Intern at Signal Corp. Ltd., New Zealand</h3>
         <p>Internship</p>
       </VerticalTimelineElement>
     </VerticalTimeline>
